@@ -33,15 +33,15 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif,;
   background: #E0FFFF;
   height: 8vh;
 }
 
 main {
-  background: url("../img/fundo.jpg") no-repeat center center;
-  background-size: cover;
-  height: 92vh;
+ background: url("../img/capa.png") no-repeat center center;  
+ background-size: cover;
+ height: 92vh;
 }
 
 .nav-list {
@@ -126,7 +126,7 @@ main {
 	margin-top: 40px;
 	margin-bottom: 30px;
 	width: 252px;
-	background-color: pink;
+	/* background-color: pink; */
 }
 .espaco{
 	width: 60px;
@@ -141,3 +141,11 @@ main {
 	height: 380px;
 	margin: auto;
 }
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
