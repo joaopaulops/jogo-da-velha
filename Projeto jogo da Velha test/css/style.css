@@ -28,19 +28,21 @@ a:hover {
 }
 
 
-nav {
+
+header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif,;
-  background: #E0FFFF;
+  background-image: radial-gradient(rgb(215, 223, 221),rgba(222, 233, 225, 0.356));
   height: 8vh;
 }
 
 main {
- background: url("../img/capa.png") no-repeat center center;  
+ background: url("../img/fundo1.jpg") no-repeat center ;  
  background-size: cover;
  height: 92vh;
+ 
 }
 
 .nav-list {
@@ -142,9 +144,30 @@ main {
 }
 .avatar {
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 75px;
+  height: 80px;
+  border-radius: 10%;
+  float: left;
+}
+.persona1 ,.persona2,.persona3,.persona4,.persona5, .persona6,.persona7{
+
+  border-radius: 25%;
+  background-image: linear-gradient(rgb(69, 206, 176),rgb(77, 168, 105));
+  padding: 20px; 
+  width: 300px;
+  height: 128px;
+  box-shadow: #000 6px 4px;
+  margin-left: 15px;
+ 
+}
+pre{
+  border-radius: 13%;
+  background-image: radial-gradient(rgba(215, 223, 221, 0.459),rgba(222, 233, 225, 0.432));
+  padding: 29px; 
+  width: 461px;
+  height: 191px;
+  box-shadow: #000 6px 4px;
+  margin-left: 44px;
 }
 
 
