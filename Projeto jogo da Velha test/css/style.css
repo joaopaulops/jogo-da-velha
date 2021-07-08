@@ -63,7 +63,7 @@ body {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background: #fff;
+  background-image: radial-gradient(rgba(215, 223, 221, 0.459),rgba(222, 233, 225, 0.432));
   margin: 8px;
   transition: 0.3s;
 }
@@ -170,7 +170,26 @@ body {
   margin-left: 30%;
   margin-top: 15%;
   text-shadow: rgba(0, 0, 0, 0.432) 0px 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   
+}
+.par {
+  margin-top: -35px;
+  margin-left: -74px;
+}
+
+.des {
+  background-image: radial-gradient(rgba(215, 223, 221, 0.521),rgba(222, 233, 225, 0.534));
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto 0 auto;
+  padding: 30px;
+  opacity: 95%;
+  font-weight: bolder;
+  text-indent: 5px;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
