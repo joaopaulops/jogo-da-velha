@@ -152,7 +152,7 @@ body {
 .persona1 ,.persona2,.persona3,.persona4,.persona5, .persona6,.persona7{
 
   border-radius: 6%;
-  background-image: radial-gradient(rgba(215, 223, 221, 0.459),rgba(222, 233, 225, 0.432));
+  background-image: radial-gradient(rgba(215, 223, 221, 0.863),rgba(222, 233, 225, 0.562));
   padding: 20px; 
   width: 325px;
   height: 128px;
