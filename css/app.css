@@ -1,0 +1,325 @@
+html, body, div, span, h1,
+h2, h3, h4, h5, h6, ul, li, nav{
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline; 
+    text-align: center;
+      
+   
+}
+
+header, main, footer, nav{
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a, button{
+    -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+    font-family: 'pixel';
+    src: url('../fonts/pixelFont.ttf');
+}
+
+/* html{ */
+    /* font-size:62.5%; */
+/* } */
+
+body{
+    background-image: url("../images/fundo1.jpg");
+    /* font-size:16px; */
+    /* font-size:1.6rem; */
+}
+
+.page-example{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:2rem;
+    color:#fff;
+    height:100vh;
+}
+
+.hamburger{
+    position:fixed;
+    top:2.5rem;
+    right:2.5rem;
+    width:70px;
+    height:70px;
+    background:#fff;
+    border-radius: 100%;
+    cursor:pointer;
+    transition: background 1s;
+    z-index:999;
+}
+
+.hamburger:hover{
+    background:#161616;
+}
+
+.hamburger--flip{
+    animation: hamburger--flip 1s;
+}
+
+.hamburger__line{
+    background: #161616;
+    width:1.5rem;
+    height:0.3rem;
+    display:block;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-0.75rem;
+    transition: background 1s;
+}
+
+.hamburger:hover .hamburger__line{
+    background:#fff;
+}
+
+.hamburger__line:nth-child(1){
+    margin-top:-0.6rem;
+}
+
+.hamburger__line:nth-child(2){
+    margin-top:-0.6rem;
+}
+
+.hamburger__line:nth-child(3){
+    margin-top:-0.15rem;
+}
+.hamburger__line:nth-child(4){
+    margin-top:0.35rem;
+}
+
+.hamburger--active .hamburger__line:nth-child(1){
+    transform: rotate(45deg);
+    margin-top: -0.15rem;
+}
+
+.hamburger--active .hamburger__line:nth-child(2){
+    transform: rotate(45deg);
+    margin-top: -0.15rem;
+}
+
+.hamburger--active .hamburger__line:nth-child(3){
+    transform: rotate(45deg);
+    
+}
+.hamburger--active .hamburger__line:nth-child(4){
+    transform: rotate(45deg);
+    margin-top: -0.15rem;
+}
+
+.menu{
+    width:100%;
+    height:100%;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'pixel';
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top:0;
+    left:0;
+    z-index:500;
+}
+
+.menu--show{
+    display:flex;
+}
+
+.menu__circle{
+    width:300px;
+    height:300px;
+    border-radius: 100%;
+    background-color: #1e1e1e;
+    position:relative;
+    animation: content--show 3s;
+}
+
+.menu__button{
+    position:absolute;
+    width:70px;
+    height:70px;
+    background:#fff;
+    border-radius:100%;
+    box-sizing: border-box;
+    padding-top:5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:3.5rem;
+    color:#1e1e1e;
+    cursor:pointer;
+    top:50%;
+    margin-top:-35px;
+    z-index:1000;
+    user-select: none;
+    transition: all 1s;
+    animation: button--show 4s;
+}
+
+.menu__button:hover{
+    color:#fff;
+    background:#161616;
+    box-shadow: #000 0 0 20px;
+}
+
+.menu__left{
+    left:-30px;
+}
+
+
+.menu__right{
+    right:-30px;
+    padding-left:10px;
+}
+
+.menu__logo{
+    margin-top:100px;
+    color:#fff;
+    text-shadow: #000 1px 0 10px;
+    text-decoration: none;
+}
+
+.menu__title{
+    font-size:3rem;
+}
+
+.menu__sub{
+    font-size:1.5rem;
+}
+
+.menu__character{
+    width: 48px;
+    height: 48px;
+    position: relative;
+    left: 0;
+    bottom:-180px;
+    margin: auto;
+    background: url('../images/character.gif') 0 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.menu__character--coming{
+    animation: character--coming 4s;
+}
+
+.menu__character--walk{
+    animation: character--walk 0.5s infinite steps(5);
+}
+
+.menu__character--left{
+    transform: scale(-1, 1);
+}
+
+.menu__box{
+    width:300px;
+    height:300px;
+    text-align: center;
+    display:block;
+    text-decoration: none;
+    font-size:3rem;
+    color:#fff;
+    text-shadow: #1d1d1d 1px 0 10px;
+    transition: text-shadow 1s;
+}
+
+.menu__item{
+    padding-top:100px;
+}
+
+.menu__link:hover{
+    text-shadow: #000 1px 0 15px;
+}
+
+.menu__overflow{
+    border-radius: 100%;
+    overflow:hidden;
+    width:300px;
+    height:300px;
+    position:relative;
+}
+
+.menu__background{
+    position:absolute;
+    top:0;
+    left:-300px;
+    height:300px;
+    min-width:600px;
+    padding:0 300px;
+    /* background-image: url('../images/X.jpg'); */
+    background-color: #000;
+    background-size: contain;
+    display:flex;
+    animation: background--show 3s;
+}
+
+@keyframes hamburger--flip {
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform: rotateY(1turn);
+    }
+}
+
+@keyframes content--show {
+    0%{
+        width:0;
+        height:0;
+    }
+    80%{
+        width:300px;
+        height:300px;
+    }
+}
+
+@keyframes button--show {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes character--coming {
+    0%{
+        left:-300px;
+    }
+    50%{
+        left:-300px;
+    }
+    100%{
+        left:0;
+    }
+}
+
+@keyframes character--walk {
+    to{ background-position: 100% 0; }
+}
+
+@keyframes background--show {
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
